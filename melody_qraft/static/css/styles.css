@@ -10791,16 +10791,16 @@ textarea:hover {
 
 
 #section3 midi-player::part(play-button) {
-  color: #353;
+  color: #E6EAEB;
   border: 2px solid currentColor;
-  background-color: #4d4;
+  background-color: #729c5e;
   border-radius: 20px;
   transition: all 0.2s;
   content: 'hello';
 }
 #section3 midi-player::part(play-button):hover {
-  color: #0a0;
-  background-color: #5f5;
+  color: #E6EAEB;
+  background-color: #729c5e;
   border-radius: 10px;
 }
 #section3 midi-player::part(time) {
@@ -10822,7 +10822,7 @@ textarea:hover {
   stroke: #500;
 }
 #section3 midi-visualizer svg rect.note[data-instrument="2"]{
-  fill: #2ee;
+  fill: #18C4EF;
   stroke: #055;
 }
 #section3 midi-visualizer svg rect.note[data-is-drum="true"]{
