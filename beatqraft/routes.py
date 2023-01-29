@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, jsonify
-from melody_qraft.get_beat import get_beat_strings
-from melody_qraft.beatgenerator import create_midi_file
+from beatqraft.get_beat import get_beat_strings
+from beatqraft.beatgenerator import create_midi_file
 import random
 import string
 

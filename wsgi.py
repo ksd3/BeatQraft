@@ -1,4 +1,4 @@
-from melody_qraft import create_app
+from beatqraft import create_app
 
 app = create_app()
 
