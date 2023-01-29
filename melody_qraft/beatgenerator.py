@@ -1,7 +1,7 @@
 from midiutil.MidiFile import MIDIFile
 
 
-def create_midi_file(bass, snare, hihat):
+def create_midi_file(name, bass, snare, hihat):
     assert(type(bass) == str)
     assert(type(snare) == str)
     assert(type(hihat) == str)
@@ -53,5 +53,5 @@ def create_midi_file(bass, snare, hihat):
     # add some notes
 
     # write it to disk
-    with open("melody_qraft/static/assets/output.mid", 'wb') as outf:
+    with open(f"melody_qraft/static/assets/output{name}.mid", 'wb') as outf:
         mf.writeFile(outf)
