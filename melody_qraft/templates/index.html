@@ -20,24 +20,7 @@
         <link href="{{ url_for('static', filename='css/h-animatedcards.css') }}" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!---------------------------------------------------- Navigation ---------------------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a> -->
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-white-50 btnsmalllang" href="/index-pt.html"><img class="langimg"src="https://www.flaticon.com/svg/static/icons/svg/197/197463.svg"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+       
         <!---------------------------------------------------- Masthead ---------------------------------------------------->
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
@@ -85,12 +68,56 @@
                             <p class="text-black-50 mb-0">MelodyQraft is a new quantum beat generator made using QCBM. Trained on 96 different beats, MelodyQraft will give you provably more expressive beats for free! 
                             <span class= "margintop">
                                 <p>
-                                <a class="btn btn-primary projectbtn" href="a.mp3">Generate!</a>
+                                <button class="btn btn-primary projectbtn" id="generate-button">Generate!</button>
                                 <a class="btn btn-primary projectbtn" href="https://github.com/mschinagaines/JWST-CountdownTimer">Code</a>
                             </span>
                         </div>
                     </div>
                 </div>
         </section>
+
+        <section class="bg-light" id="section3" >
+            <h2>Custom player and visualizer style</h2>
+            <midi-player
+              src="https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/jazz.mid"
+              sound-font visualizer="#section3 midi-visualizer">
+            </midi-player>
+            <midi-visualizer
+              src="https://cdn.jsdelivr.net/gh/cifkao/html-midi-player@2b12128/jazz.mid">
+            </midi-visualizer>
+
+            <br><br><br><br>
+        </section>
     </body>
 </html>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
+
+<script>
+    var settings = {
+          "url": `/api/a`,
+          "method": "GET",
+          "timeout": 0,
+    };
+
+    $.ajax(settings).done(function (response) {
+        console.log(response.status);
+    });
+
+    $(document).ready(function() {
+        $("#section3").hide();
+    });
+
+    $('#generate-button').click(() => {
+
+            $("#section3").show();
+            $('html,body').animate({
+            'scrollTop': $('#section3').offset().top
+            }, 1500);
+    });
+    
+
+</script>
