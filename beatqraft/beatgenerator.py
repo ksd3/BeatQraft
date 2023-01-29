@@ -53,5 +53,5 @@ def create_midi_file(bass, snare, hihat):
     # add some notes
 
     # write it to disk
-    with open("melody_qraft/static/assets/output.mid", 'wb') as outf:
+    with open("beatqraft/static/assets/output.mid", 'wb') as outf:
         mf.writeFile(outf)
