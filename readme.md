@@ -1,18 +1,15 @@
 <div align=center>
 
-<h1><a href="https://github.com/StartBootstrap/startbootstrap-grayscale">Minimalistic, Responsive Portfolio Website</a>— Built with 💝</h1>
+<h1>BeatQraft</h1>
 
 </div>
 
-<h3 align=center>Multipurpose, One-page website for bootstrap built by <a href="https://github.com/StartBootstrap/startbootstrap-grayscale">Start Bootstrap</a></h3>
+<h3 align=center>Are you a music producer who just can't quite find a beat? <span class="wave">&#128400</span>Do you need inspiration? Something that'll make your up-and-coming star the next Elvis? Fear not! The mysterious world of quantum mechanics is here to help!</h3>
 
-<!-- Languages and Tools > -->
-## Preview 
+To run this project locally make sure to be using Python3, install all the requirements, and then you can use start a local server by invoking the script `start.sh`:
 
-<p align="center">
-  <img src="./melody_qraft/static/assets/img/mock-up.PNG" alt="Mock-up">    
-  <p align="center"><a href="https://mschinagaines.github.io/">Live Version</a></p>
- 
-</p>
+```bash
+pip install -r requirements.txt
+bash start.sh
+```
 
-### Credit: <a href="https://github.com/StartBootstrap/startbootstrap-grayscale">Start Bootstrap</a></p>
