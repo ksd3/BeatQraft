@@ -21,4 +21,6 @@ You can read the full report [here](https://github.com/ksd3/iQuHACK23-IBM-Covale
 
 Some screenshots of the site:
 
-<img src="/images/title.jpg">
+<img src="/images/title.png">
+<img src="/images/page2.png">
+<img src="/images/page3.png">
