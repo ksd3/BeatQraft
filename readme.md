@@ -20,4 +20,3 @@ Trained on 96 different types of beats (consisting of hi-hat, snare, and bass dr
 You can read the full report [here](https://github.com/ksd3/iQuHACK23-IBM-Covalent/blob/main/beatqraft/static/assets/docs/iQuHack_2023_Report.pdf).
 
 Some screenshots of the site:
-
