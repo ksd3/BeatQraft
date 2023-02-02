@@ -24,3 +24,4 @@ Some screenshots of the site:
 <img src="/images/title.png">
 <img src="/images/page2.png">
 <img src="/images/page3.png">
+<img src="/images/generated.png">
